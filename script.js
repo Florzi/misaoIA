@@ -6,8 +6,26 @@
 
     const perguntas = [
         {
-        enunciado: "qual pais tem o maior indice de pobreza?",
-        alternativas: ["Africa", "Somália" , "Suiça" , "Cuba"],
+        enunciado: "qual pais tem o maior indice de pobreza?"
+        alternativas: [
+        { 
+            texto:"Africa"
+            afirmação:"Afirmação da alternativa 1"
+           },
+
+           { texto:"Somália"
+            afirmação: "afirmação da alternativa 2"
+        },
+            
+           { texto:"Suiça"
+           afirmação: "afirmação da alternativa 3"
+        },
+
+            { texto:"Cuba"
+             afirmação:"afirmação da altenativa 4"
+         },
+            
+        ]
         },
         {
         enunciado: "qual o estado brasileiro mais racista?",
