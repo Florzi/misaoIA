@@ -1,41 +1,81 @@
     const caixaPrincipal = document.querySelector('.caixa-principal');
+
     const caixaPerguntas = document.querySelector('.caixa-perguntas');
+
     const caixaAlternativas = document.querySelector('.caixa-alternativas');
+
     const caixaResultado = document.querySelector('.caixa-resultado');
+
     const textoResultado = document.querySelector('.texto-resultado');
 
     const perguntas = [
         {
         enunciado: "qual pais tem o maior indice de pobreza?"
-        alternativas: [
+        alternativas : [
         { 
-            texto:"Africa"
-            afirmação:"Afirmação da alternativa 1"
+            texto:"Africa",
+            afirmação:""
            },
 
-           { texto:"Somália"
-            afirmação: "afirmação da alternativa 2"
-        },
+           {texto:"Somália",
+            afirmação: ""
+             },
             
-           { texto:"Suiça"
-           afirmação: "afirmação da alternativa 3"
+           { texto:"Suiça",
+           afirmação: ""
+             },
+        
+            { texto:"Cuba",
+             afirmação:""
+              },
+            ]
         },
 
-            { texto:"Cuba"
-             afirmação:"afirmação da altenativa 4"
-         },
+
+    
+             enunciado: "qual o estado brasileiro mais racista?",
+             alternativas: [,
+             { 
+                 texto:"São Paulo",
+                 afirmação:""
+                },
+     
+                { texto:"Paraná",
+                 afirmação: ""
+             },
+                 
+                { texto:"Rio Grande do Sul",
+                afirmação: ""
+             },
+     
+                 { texto:"Santa Catarina",
+                  afirmação:""
+              },
+             ]
             
-        ]
-        },
-        {
-        enunciado: "qual o estado brasileiro mais racista?",
-        alternativas: ["São Paulo", "Paraná" , "Rio Grande do Sul" , "Santa Catarina"],
-        },
-        {
-         enunciado: "Quais dos seguintes fatores e mais frequentemente citado como uma causa primária da desigualdade social em sociedades modernas?",
-         alternativas: ["Distribuição disigual de riqueza e renda", "Localizaçaõ Geografica" , "Preferencias culturais" , "Condicões climaticas"],
+            {
+        
+            enunciado: "qual dos seguintes fatores e mais frequentemente citado como uma causa primaria da desigualdade social em sociedade modernas?"
+            alternativas: [
+            { 
+                texto:"Distribuição desigualdade de requeza e renda",
+                afirmação:""
+               },
+    
+               {texto:"Localizão geográfica",
+                afirmação: ""
+                 },
+                
+               { texto:"preferencias culturais",
+               afirmação: ""
+                 },
+            
+                { texto:"Condições climaticas",
+                 afirmação:""
+                  },
+                ]
             },
-        ];
+           ]    
         let atual = 0;
         let perguntaAtual;  
 
