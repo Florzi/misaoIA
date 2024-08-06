@@ -36,17 +36,14 @@
                  afirmação:""
                 },
                 {
-
                 texto:"Paraná",
                   afirmação: ""
                 },
                 {
-
                 texto:"Rio Grande do Sul",
                 afirmação: ""
                  },
                  {
-     
                   texto:"Santa Catarina",
                   afirmação:""
                  },
@@ -84,17 +81,18 @@
 
         function mostraPergunta() {
              if (atual >= pergunta.length){
-             mostrarResultado(),
+             mostrarResultado();
              return;
             }
 
             perguntaAtual = perguntas[atual];
             caixaPerguntas.textContent = perguntaAtual.enunciado;
             caixaAlternativas.textContent = "";
-            mostraPergunta();
+              mostraPergunta();
             }
+            mostraPerguntas();
             function mostraAlternativas() {
-                for (const alternativa of perguntaAtual.alternativas) {
+                for (const alternativa of perguntaAtual.alternativas){
                 const botaoAlternativas = document. createElement("button");
                 botaoAlternativas.textContent = alternativa.texto;
                 botaoAlternativas. addEventListener("click", () =>
@@ -103,8 +101,8 @@
                 }
             }
 
-          function respostaSelecionada(opcaoSelecionada){
-          conts afirmacoes = opcaoSelecionada.afirmacao;
+          function respostaSelecionada(opcaoSelecionada) {
+          conts afirmacoes = opcaoSelecionada.afirmação;
           historiaFinal += afirmacoes + " ";
           atual++
           mostraPergunta();
